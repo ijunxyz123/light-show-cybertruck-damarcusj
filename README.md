@@ -203,9 +203,11 @@ The keyboard layout is designed to be easy to use. Note that the effect types ar
     <img src="/images/ramp_example_3.png?raw=true" height="180" />
 
 ## Full Brightness Control Channels
-Some lights on Cybertruck have full brightness control. Their brightness alawys corresponds to the value set in XLights
-- Lights can be set to a steady-state brightness setpoint between 0% and 100% intensity using the 'Brightness' Slider in the 'Colors' Windows.
+Some lights on Cybertruck have full brightness control. Their brightness alawys corresponds to the value set in XLights.
+- Place an 'On' Effect using the shortcut _F_. Lights can be set to a steady-state brightness setpoint between 0% and 100% intensity using the 'Brightness' Slider in the 'Colors' Windows.
+    <img src="/images/brightness-slider.png?raw=true" width="500" />
 - Custom ramp durations can be achieved using 'Value Curves'. The menu is opened when clicking the green arrow next to the brightness slider. To create a basic ramp, select 'Ramp' from the drop-down list and set the start/end duration to 0%/100%.
+    <img src="/images/value-curve.png?raw=true" width="500" />
 - Value Curves can also be used to create more advanced custom brightness effects. Keep in mind that the maximum brightness is 100.
 - On cars without full brightness control, any brightness setting above 127 (50%) will set the light to ON and otherwise it will be OFF.
 
@@ -358,7 +360,9 @@ To command a closure to move in a particular manner, place an effect with the fo
 #### Cybertruck Light Bar
 - The front and rear light bar have 60 individually controllable LEDs each.
 - Use XLights' integreated effects to program the light bar. Recommendations for getting started: Curtain, Marble, Morph and On. Most effects can be customized using the 'Effect Settings' Window. The visualization displays all effects accurately.
+    <img src="/images/effect-settings.png?raw=true" width="500" />
 - The front light bar is grouped intro three segments: Left, Cemter, Right. Left/Right are the outer angled portions of the front light bar. The segments can be accessed by double clicking on the light bar in the timeline.
+    <img src="/images/lightbar-timeline.png?raw=true" width="500" />
 - The rear light bar is grouped into three segments: Left, Center, Right. Center consists of the 52 LEDs on the tailgate, while Left/Right are 4 LEDs each above the Turn Signals.
 - The individual LEDs can be programmed by double clicking on the segments in the timeline.
 
