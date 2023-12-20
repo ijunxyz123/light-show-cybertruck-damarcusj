@@ -203,7 +203,7 @@ The keyboard layout is designed to be easy to use. Note that the effect types ar
     <img src="/images/ramp_example_3.png?raw=true" height="180" />
 
 ## Full Brightness Control Channels
-Some lights on Cybertruck have full brightness control. Their brightness alawys corresponds to the value set in XLights.
+Some lights on Cybertruck have full brightness control. Their brightness always corresponds to the value set in XLights.
 - Place an 'On' Effect using the shortcut _F_. Lights can be set to a steady-state brightness setpoint between 0% and 100% intensity using the 'Brightness' Slider in the 'Colors' Windows.
     <img src="/images/brightness_slider.png?raw=true" width="500" />
 - Custom ramp durations can be achieved using 'Value Curves'. The menu is opened when clicking the green arrow next to the brightness slider. To create a basic ramp, select 'Ramp' from the drop-down list and set the start/end duration to 0%/100%.
@@ -242,6 +242,7 @@ The following tables and images help show which channels are controlled on each 
 <img src="/images/x_headlights.png?raw=true" width="900"/><br>
 
 ### Cybertruck
+
 <img src="/images/cybertruck_front.png?raw=true" width="900"/><br>
 <img src="/images/cybertruck_rear.png?raw=true" width="900"/><br>
 <img src="/images/lightbar_rear.png?raw=true" width="900"/><br>
@@ -365,11 +366,22 @@ To command a closure to move in a particular manner, place an effect with the fo
 #### Cybertruck Light Bar
 - The front and rear light bar have 60 individually controllable LEDs each.
 - Use XLights' integreated effects to program the light bar. Recommendations for getting started: Curtain, Marble, Morph and On. Most effects can be customized using the 'Effect Settings' Window. The visualization displays all effects accurately.
+
     <img src="/images/effect_settings.png?raw=true" width="500" />
+    
 - The front light bar is grouped intro three segments: Left, Cemter, Right. Left/Right are the outer angled portions of the front light bar. The segments can be accessed by double clicking on the light bar in the timeline.
-    <img src="/images/lightbar_timeline.png?raw=true" width="500" />
+
+    <img src="/images/lightbar_timeline.png?raw=true" width="900" />
+    
 - The rear light bar is grouped into three segments: Left, Center, Right. Center consists of the 52 LEDs on the tailgate, while Left/Right are 4 LEDs each above the Turn Signals.
 - The individual LEDs can be programmed by double clicking on the segments in the timeline.
+
+#### Cybertruck Lights
+- Reverse Lights are activated with L/R Tail in XLights.
+- L/R Rear Side Markers are activated with L/R Side Repeaters in XLights.
+- Powered Frunk is activated with Liftgate in XLights.
+- Frunk Light is activated with Aux Park in XLights.
+- Bed Lights are activated with Reverse Light in XLights.
 
 ## Converting old (pre-2022 holiday update) show files
 All old .fseq files are fully compatible with the new light show update. You only need to convert old show files if you want to edit them with the refreshed XLights configuration.
