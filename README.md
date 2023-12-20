@@ -205,9 +205,13 @@ The keyboard layout is designed to be easy to use. Note that the effect types ar
 ## Full Brightness Control Channels
 Some lights on Cybertruck have full brightness control. Their brightness always corresponds to the value set in XLights.
 - Place an 'On' Effect using the shortcut _F_. Lights can be set to a steady-state brightness setpoint between 0% and 100% intensity using the 'Brightness' Slider in the 'Colors' Windows.
+
     <img src="/images/brightness_slider.png?raw=true" width="500" />
+    
 - Custom ramp durations can be achieved using 'Value Curves'. The menu is opened when clicking the green arrow next to the brightness slider. To create a basic ramp, select 'Ramp' from the drop-down list and set the start/end duration to 0%/100%.
-    <img src="/images/value_curve.png?raw=true" width="500" />
+
+  <img src="/images/value_curve.png?raw=true" width="500" />
+  
 - Value Curves can also be used to create more advanced custom brightness effects. Keep in mind that the maximum brightness is 100.
 - On cars without full brightness control, any brightness setting above 127 (50%) will set the light to ON and otherwise it will be OFF.
 
