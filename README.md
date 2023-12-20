@@ -213,7 +213,7 @@ Some lights on Cybertruck have full brightness control. Their brightness always 
   <img src="/images/value_curve.png?raw=true" width="900" />
   
 - Value Curves can also be used to create more advanced custom brightness effects. Keep in mind that the maximum brightness is 100.
-- On cars without full brightness control, any brightness setting above 127 (50%) will set the light to ON and otherwise it will be OFF.
+- On cars without full brightness control, any brightness setting above 50% will set the light to ON and otherwise it will be OFF.
 
 ## <a name="light_locations"></a>Light Channel Locations
 The following tables and images help show which channels are controlled on each car. Some vehicles have lights that do not exist, or have multiple lights driven by the same control output - see notes in [Light channel mapping details](#light_channel_mapping_details) for this information.
