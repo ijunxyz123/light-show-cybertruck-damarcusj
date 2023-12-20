@@ -210,7 +210,7 @@ Some lights on Cybertruck have full brightness control. Their brightness always 
     
 - Custom ramp durations can be achieved using 'Value Curves'. The menu is opened when clicking the green arrow next to the brightness slider. To create a basic ramp, select 'Ramp' from the drop-down list and set the start/end duration to 0%/100%.
 
-  <img src="/images/value_curve.png?raw=true" width="500" />
+  <img src="/images/value_curve.png?raw=true" width="900" />
   
 - Value Curves can also be used to create more advanced custom brightness effects. Keep in mind that the maximum brightness is 100.
 - On cars without full brightness control, any brightness setting above 127 (50%) will set the light to ON and otherwise it will be OFF.
