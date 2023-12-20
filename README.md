@@ -204,7 +204,7 @@ The keyboard layout is designed to be easy to use. Note that the effect types ar
 
 ## Full Brightness Control Channels
 Some lights on Cybertruck have full brightness control. Their brightness always corresponds to the value set in XLights.
-- Place an 'On' Effect using the shortcut _F_. Lights can be set to a steady-state brightness setpoint between 0% and 100% intensity using the 'Brightness' Slider in the 'Colors' Windows.
+- Place an 'On' Effect using the shortcut _F_. Lights can be set to a steady-state brightness setpoint between 0% and 100% intensity using the 'Brightness' slider in the 'Colors' window.
 
     <img src="/images/brightness_slider.png?raw=true" width="500" />
     
