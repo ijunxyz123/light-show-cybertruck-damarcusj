@@ -153,13 +153,17 @@ In this example, the Left Front Fog turns on and off 3x:
 
 ## <a name="ramping_lights"></a>Ramping Light Channels
 Some channels can have a slow ramp in the intensity during turn-on or turn-off, to create graceful visual effects:
-| Channel | Model S | Model X | Model 3/Y |
-| --- | --- | --- | --- |
-| Outer Main Beam  | Ramping | Ramping | Ramping on LED reflector headlights; <br> Boolean on LED projector headlights |
-| Inner Main Beam | Ramping | Ramping | Ramping |
-| Signature | Boolean | Boolean | Ramping |
-| Channels 4-6 | Ramping | Ramping | Ramping |
-| Front Turn | Boolean | Boolean | Ramping |
+| Channel | Model S | Model X | Model 3/Y | Cybertruck |
+| --- | --- | --- | --- | --- |
+| Outer Main Beam  | Ramping | Ramping | Ramping on LED reflector headlights; <br> Boolean on LED projector headlights | Ramping |
+| Inner Main Beam | Ramping | Ramping | Ramping | Ramping |
+| Signature | Boolean | Boolean | Ramping | - |
+| Channels 4-6 | Ramping | Ramping | Ramping | - |
+| Front Turn | Boolean | Boolean | Ramping | Ramping |
+| Front Side Markers | Boolean | Boolean | Boolean | Ramping |
+| Brake Light | Boolean | Boolean | Boolean | Full Brightness Control |
+| Rear Turn | Boolean | Boolean | Boolean | Full Brightness Control |
+| Bed Lights | - | - | - | Ramping |
 
 To command a light to turn on or off and follow a ramp profile, place the effect with the corresponding keyboard shortcut:
 
@@ -199,7 +203,7 @@ The keyboard layout is designed to be easy to use. Note that the effect types ar
     <img src="/images/ramp_example_3.png?raw=true" height="180" />
 
 ## Full Brightness Control Channels
-Some lights on Cybertruck have full brightness control. Their brightness alawys corresponds to the value set in XLights.
+Some lights on Cybertruck have full brightness control. Their brightness alawys corresponds to the value set in XLights
 - Lights can be set to a steady-state brightness setpoint between 0% and 100% intensity using the 'Brightness' Slider in the 'Colors' Windows.
 - Custom ramp durations can be achieved using 'Value Curves'. The menu is opened when clicking the green arrow next to the brightness slider. To create a basic ramp, select 'Ramp' from the drop-down list and set the start/end duration to 0%/100%.
 - Value Curves can also be used to create more advanced custom brightness effects. Keep in mind that the maximum brightness is 100.
@@ -237,15 +241,16 @@ The following tables and images help show which channels are controlled on each 
 
 ## <a name="closures"></a>Closures channels
 In custom xLights shows, the following closures can be commanded:
-| Channel | Model S | Model X | Model 3/Y | Supports Dance? | Command Limit Per Show |
-| --- | --- | --- | --- | --- | --- |
-| Liftgate | Yes | Yes | Only vehicles with power liftgate | Yes | 6 |
-| Mirrors | Yes | Yes | Yes | - | 20 |
-| Charge Port | Yes | Yes | Yes | Yes | 3 |
-| Windows | Yes | Yes | Yes | Yes | 6 |
-| Door Handles | Yes | - | - | - | 20 |
-| Front Doors | - | Yes | - | - | 6 |
-| Falcon Doors | - | Yes | - | Yes | 6 |
+| Channel | Model S | Model X | Model 3/Y | Cybertruck | Supports Dance? | Command Limit Per Show |
+| --- | --- | --- | --- | --- | --- | --- |
+| Liftgate | Yes | Yes | Only vehicles with power liftgate | Yes (Frunk) | Yes | 6 |
+| Mirrors | Yes | Yes | Yes | Yes | - | 20 |
+| Charge Port | Yes | Yes | Yes | Yes | Yes | 3 |
+| Windows | Yes | Yes | Yes | Yes | Yes | 6 |
+| Door Handles | Yes | - | - | - | - | 20 |
+| Front Doors | - | Yes | - | - | - | 6 |
+| Falcon Doors | - | Yes | - | - | Yes | 6 |
+| Suspension | - | - | - | Yes | - | 2 |
 
 To command a closure to move in a particular manner, place an effect with the following keyboard shortcuts:
 
@@ -268,6 +273,7 @@ To command a closure to move in a particular manner, place an effect with the fo
 - For closures that do not support Dance, it's recommended to use Open and Close requests to cause movement during the show.
 - It's recommended to avoid closing windows during the show so that music stays more audible. Music only plays from the cabin speakers during the show.
 - Closures can only dance for a limited time before encountering thermal limits. This depends on multiple factors including ambient temperature, etc. If thermal limits are encountered, the given closure will stop moving until it cools down. Dancing for ~30s or less per show is recommended.
+- Moving Windows during Model X door movement can cause false pinch detections, stopping the light show.
 
 ### Closures Command Limitations
 - All closures have actuation limits listed in the table above. Only Open, Close, and Dance count towards the actuation limits. The limits are counted separately for each individual closure.
@@ -293,6 +299,8 @@ To command a closure to move in a particular manner, place an effect with the fo
 | Close Falcon Doors | 8 |
 | Windows | 4 |
 | Mirrors, Door Handles, Charge Port | 2 |
+| Raise Suspension | 20* |
+| Lower Suspension | 3* |
 
 
 ## Tips for platform-agnostic light shows
@@ -346,6 +354,13 @@ To command a closure to move in a particular manner, place an effect with the fo
 
 #### Tail lights and License Plate Lights
 - On Model 3 built before October 2020: left tail, right tail, and license plate lights operate together. They will activate during ```(Left tail || Right tail)``` requests from xLights - note that the license plate lights xLights channel will have no effect on these vehicles.
+
+#### Cybertruck Light Bar
+- The front and rear light bar have 60 individually controllable LEDs each.
+- Use XLights' integreated effects to program the light bar. Recommendations for getting started: Curtain, Marble, Morph and On. Most effects can be customized using the 'Effect Settings' Window. The visualization displays all effects accurately.
+- The front light bar is grouped intro three segments: Left, Cemter, Right. Left/Right are the outer angled portions of the front light bar. The segments can be accessed by double clicking on the light bar in the timeline.
+- The rear light bar is grouped into three segments: Left, Center, Right. Center consists of the 52 LEDs on the tailgate, while Left/Right are 4 LEDs each above the Turn Signals.
+- The individual LEDs can be programmed by double clicking on the segments in the timeline.
 
 ## Converting old (pre-2022 holiday update) show files
 All old .fseq files are fully compatible with the new light show update. You only need to convert old show files if you want to edit them with the refreshed XLights configuration.
