@@ -16,6 +16,7 @@ Multiple light show repositories can be found online. A screenshot from [TeslaLi
 - Model 3
 - Model X (2021+)
 - Model Y
+- Cybertruck
 - Running Software v11.0 (2021.44.25) or newer
 ### USB flash drive requirements
 - Must contain a base-level folder called "LightShow" (without quotation marks and case sensitive).
@@ -161,6 +162,8 @@ Some channels can have a slow ramp in the intensity during turn-on or turn-off, 
 | Channels 4-6 | Ramping | Ramping | Ramping | - |
 | Front Turn | Boolean | Boolean | Ramping | Ramping |
 | Front Side Markers | Boolean | Boolean | Boolean | Ramping |
+| Front Light Bar | - | - | - | Full Brightness Control |
+| Rear Light Bar | - | - | - | Full Brightness Control |
 | Brake Light | Boolean | Boolean | Boolean | Full Brightness Control |
 | Rear Turn | Boolean | Boolean | Boolean | Full Brightness Control |
 | Bed Lights | - | - | - | Ramping |
