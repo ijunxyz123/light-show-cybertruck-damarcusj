@@ -201,6 +201,13 @@ The keyboard layout is designed to be easy to use. Note that the effect types ar
 
     <img src="/images/ramp_example_3.png?raw=true" height="180" />
 
+## Full Brightness Control Channels
+Some lights on Cybertruck have full brightness control. Their brightness alawys corresponds to the value set in XLights.
+- Lights can be set to a steady-state brightness setpoint between 0% and 100% intensity using the 'Brightness' Slider in the 'Colors' Windows.
+- Custom ramp durations can be achieved using 'Value Curves'. The menu is opened when clicking the green arrow next to the brightness slider. To create a basic ramp, select 'Ramp' from the drop-down list and set the start/end duration to 0%/100%.
+- Value Curves can also be used to create more advanced custom brightness effects. Keep in mind that the maximum brightness is 100.
+- On cars without full brightness control, any brightness setting above 127 (50%) will set the light to ON and otherwise it will be OFF.
+
 ## <a name="light_locations"></a>Light Channel Locations
 The following tables and images help show which channels are controlled on each car. Some vehicles have lights that do not exist, or have multiple lights driven by the same control output - see notes in [Light channel mapping details](#light_channel_mapping_details) for this information.
 | Light Channel Name | Identifier in image - Model S/X | Identifier in image - Model 3/Y |
