@@ -4,7 +4,7 @@ With the tesla_xlights_cross_vehicle_folder, you can program synchronized light 
 ## Setup xLights
 This guide assumes that you have already setup the global xLights settings and read the instructions for creating normal light shows.
 
-1. Download and unzip [tesla_xlights_cross_vehicle_folder.zip](xlights/tesla_xlights_cross_vehicle_folder.zip?raw=true), which is the Tesla xLights bare project directory.
+1. Download and unzip [tesla_xlights_cross_vehicle_folder.zip](/xlights/tesla_xlights_cross_vehicle_folder.zip?raw=true), which is the Tesla xLights bare project directory.
 2. Change your xLights show directory to tesla_xlights_cross_vehicle_folder
     - You can select 'Change Temporarily' if you want xLights to continue opening the normal show directory when starting the program.
 
