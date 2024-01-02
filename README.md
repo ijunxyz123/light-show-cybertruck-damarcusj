@@ -411,7 +411,7 @@ All old .fseq files are fully compatible with this light show update. You only n
 
     <img src="/images/convert_import.png?raw=true" width="500" />
 
-- In "Map Channels" Window, select "Load Mapping" and choose "mapping.xmap" located in the "convert to new format" folder.
+- In "Map Channels" Window, select "Load Mapping" and choose "2022_mapping.xmap" located in the tesla_xlights_show_folder.
 
     <img src="/images/convert_load_mapping.png?raw=true" width="800" />
 
