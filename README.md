@@ -374,7 +374,7 @@ To command a closure to move in a particular manner, place an effect with the fo
 
 #### Cybertruck Light Bar
 - The front and rear light bar have 60 individually controllable LEDs each.
-- It's recommended to xLights' integreated effects to program the light bar. Good for getting started are: Curtain, Marble, Morph and On. Most effects can be customized using the 'Effect Settings' Window. The visualization will display all effects accurately, but keep in mind that the lights are very diffused.
+- It's recommended to use xLights' integreated effects to program the light bar. Good ones for getting started are: Curtain, Marble, Morph and On. Most effects can be customized using the 'Effect Settings' Window. The visualization will display all effects accurately, but keep in mind that the lights are very diffused.
 
     <img src="/images/xlights_integrated_effects.png?raw=true" width="1000" />
 
