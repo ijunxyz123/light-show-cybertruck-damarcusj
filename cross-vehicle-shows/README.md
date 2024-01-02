@@ -22,7 +22,7 @@ vehicle types. It's recommended to resize or move the preview to fit all cars.
 
 - Each Cybertruck / Model S combination has it's own number. When viewed from the front, the cars are numbered 1 to 5 from Left to Right.
 
-    <img src="/images/car_setup.jpg?raw=true" width="300" />
+    <img src="/images/car_setup.jpg?raw=true" width="800" />
 
 
 - This show folder heavily relies on Groups to organize the almost 1000 light channels.
